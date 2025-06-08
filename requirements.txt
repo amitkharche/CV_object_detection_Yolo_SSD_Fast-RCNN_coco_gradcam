@@ -1,0 +1,9 @@
+torch>=2.0.0
+torchvision>=0.15
+opencv-python
+streamlit
+matplotlib
+numpy
+Pillow
+pycocotools
+scikit-learn
