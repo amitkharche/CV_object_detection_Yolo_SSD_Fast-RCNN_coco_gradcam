@@ -6,3 +6,5 @@ __pycache__/
 *.pth
 data/
 checkpoints/
+data\coco\annotations\instances_train2017.json
+data\coco\annotations\person_keypoints_train2017.json

@@ -1,10 +1,10 @@
-# 🧠 Object Detection Models with Grad-CAM & COCO Support
+# Object Detection Models with Grad-CAM & COCO Support
 
 This repository includes full implementations of **YOLOv3**, **SSD**, and **Fast R-CNN** for object detection using PyTorch. It also integrates **Grad-CAM** visualizations and supports the **COCO dataset** for training and evaluation.
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 object-detection-models/
@@ -26,7 +26,7 @@ object-detection-models/
 
 ---
 
-## 💼 Business Use Case
+## Business Use Case
 
 Modern businesses require **automated object detection** for:
 
@@ -39,13 +39,13 @@ This project provides ready-to-use models capable of detecting and explaining pr
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone and Install Dependencies
 
 ```bash
-git clone https://github.com/yourname/object-detection-models.git
-cd object-detection-models
+git clone https://github.com/amitkharche/CV_object_detection_Yolo_SSD_Fast-RCNN_coco_gradcam.git
+cd CV_object_detection_Yolo_SSD_Fast-RCNN_coco_gradcam
 pip install -r requirements.txt
 ```
 
@@ -76,31 +76,35 @@ data/
 
 ---
 
-## 🧪 Train a Model
+## Train a Model
 
 ### Example: YOLOv3 on COCO
 
 ```bash
 python src/train.py --model_type yolov3 --dataset coco
+python src/train.py --model_type ssd --dataset coco
+python src/train.py --model_type fast_rcnn --dataset coco
 ```
 
 *You can extend for `ssd` or `fast_rcnn` in a similar way.*
 
 ---
 
-## 📊 Evaluate a Model
+## Evaluate a Model
 
 ```bash
 python src/evaluate.py --model_type yolov3 --dataset coco
+python src/evaluate.py --model_type ssd --dataset coco
+python src/evaluate.py --model_type fast_rcnn --dataset coco
+
 ```
 
 ---
 
-## 🌐 Launch Streamlit App
+## Launch Streamlit App
 
 ```bash
-cd streamlit_app
-streamlit run app.py
+streamlit run streamlit_app/app.py
 ```
 
 - Upload an image
@@ -109,12 +113,21 @@ streamlit run app.py
 
 ---
 
-## 📸 Demo
+## Demo
 
 ![Demo](demo/demo.gif)
 
 ---
 
-## 📜 License
+## License
 
 MIT License
+
+## Let’s Connect!
+
+* [LinkedIn](https://www.linkedin.com/in/amit-kharche)
+* [Medium](https://medium.com/@amitkharche14)
+* [GitHub](https://github.com/amitkharche)
+
+---
+
